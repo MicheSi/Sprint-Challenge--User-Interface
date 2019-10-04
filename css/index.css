@@ -222,3 +222,30 @@ footer nav a {
 .top-about .about {
     padding: 0 30px 20px;
 }
+ .middle-about {
+     display: flex;
+     flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 30px;
+ }
+
+ .middle-about .learn-more {
+     width: 48%;
+     border-bottom: 1px dashed black;
+ }
+
+ .middle-about .learn-more h2 {
+     margin-top: 10px;
+ }
+
+ .middle-about .learn-more p {
+     margin-bottom: 30px;
+ }
+
+ .button {
+     text-decoration: none;
+     color: black;
+     border: 1.5px solid black;
+     border-radius: 4px;
+     padding: 5px 20px;
+ }
