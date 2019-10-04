@@ -82,6 +82,7 @@ nav a {
     color: black;
     text-decoration: none;
     padding: 35px;
+    margin-left: 10px;
 }
 
 .highway {
@@ -191,12 +192,13 @@ footer {
 
 footer nav {
     width: 60%;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
     font-size: 14px;
-    margin-left: -20px;
+    margin-left: -25px;
 }
 
 footer nav a {
@@ -226,16 +228,22 @@ footer nav a {
      display: flex;
      flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 30px;
+    margin-top: -30px;
+    padding: 0 20px;
  }
 
  .middle-about .learn-more {
      width: 48%;
      border-bottom: 1px dashed black;
+     padding: 10px 0 30px;
  }
 
  .middle-about .learn-more h2 {
      margin-top: 10px;
+ }
+
+ .learn-more img {
+     padding: 30px 0 0;
  }
 
  .middle-about .learn-more p {
@@ -248,4 +256,8 @@ footer nav a {
      border: 1.5px solid black;
      border-radius: 4px;
      padding: 5px 20px;
+ }
+
+ .bottom-about {
+     margin-top: 30px;
  }
