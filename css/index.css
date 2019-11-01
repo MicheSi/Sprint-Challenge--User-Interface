@@ -253,10 +253,13 @@ footer nav a {
      text-decoration: none;
      color: black;
      border: 1.5px solid black;
-     border-radius: 4px;
-     padding: 5px 20px;
+     border-radius: 10px;
+     padding: 8px 20px;
  }
 /* Bottom Section */
  .bottom-about {
-     margin-top: 30px;
+     margin-top: 5%;
+     padding: 0 3%;
  }
+
+ 
