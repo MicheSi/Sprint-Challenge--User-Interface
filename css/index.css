@@ -46,7 +46,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/* Universal selectors */
 * {
     box-sizing: border-box;
 }
@@ -72,7 +72,7 @@ p {
     width: 800px;
     margin: 0 auto;
 }
-
+/* Nav Bar */
 nav {
     margin: 30px 0 10px;
 }
@@ -84,8 +84,9 @@ nav a {
     padding: 35px;
     margin-left: 10px;
 }
-
+/* Header */
 .highway {
+    width: 100%;
     margin: 30px 0;
 }
 
@@ -102,7 +103,7 @@ nav a {
     padding: 0 1%;
     padding-bottom: 20px;  
 }
-
+/* Box Content */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -169,7 +170,7 @@ nav a {
 .middle-content .boxes .box10 {
     background: dodgerblue;
 }
-
+/* Bottom Section */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -183,7 +184,7 @@ nav a {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
-
+/* Footer */
 footer {
     width: 100%;
     background: black;
@@ -192,13 +193,13 @@ footer {
 
 footer nav {
     width: 60%;
-    height: 60px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
+    /* padding: 20px 2%; */
     font-size: 14px;
-    margin-left: -25px;
+    /* margin-left: -25px; */
 }
 
 footer nav a {
@@ -211,7 +212,7 @@ footer nav a {
     width: 800px;
     margin: 0 auto;
 }
-
+/* Header */
 .downtown {
     margin: 30px 0 20px;
 }
@@ -224,13 +225,14 @@ footer nav a {
 .top-about .about {
     padding: 0 30px 20px;
 }
- .middle-about {
+/* Middle Section */
+.middle-about {
      display: flex;
      flex-wrap: wrap;
     justify-content: space-between;
     margin-top: -30px;
     padding: 0 20px;
- }
+}
 
  .middle-about .learn-more {
      width: 48%;
@@ -257,7 +259,7 @@ footer nav a {
      border-radius: 4px;
      padding: 5px 20px;
  }
-
+/* Bottom Section */
  .bottom-about {
      margin-top: 30px;
  }
