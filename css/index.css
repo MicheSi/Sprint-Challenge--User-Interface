@@ -46,7 +46,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/* Universal selectors */
 * {
     box-sizing: border-box;
 }
@@ -72,7 +72,7 @@ p {
     width: 800px;
     margin: 0 auto;
 }
-
+/* Nav Bar */
 nav {
     margin: 30px 0 10px;
 }
@@ -85,7 +85,12 @@ nav a {
     margin-left: 10px;
 }
 
+nav a:hover {
+    color: firebrick;
+}
+/* Header */
 .highway {
+    width: 100%;
     margin: 30px 0;
 }
 
@@ -102,7 +107,7 @@ nav a {
     padding: 0 1%;
     padding-bottom: 20px;  
 }
-
+/* Box Content */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -117,6 +122,17 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    animation-duration: 5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-right: 0%;
+    }
 }
 
 .middle-content .boxes .box {
@@ -169,7 +185,7 @@ nav a {
 .middle-content .boxes .box10 {
     background: dodgerblue;
 }
-
+/* Bottom Section */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -183,7 +199,7 @@ nav a {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
-
+/* Footer */
 footer {
     width: 100%;
     background: black;
@@ -192,27 +208,24 @@ footer {
 
 footer nav {
     width: 60%;
-    height: 60px;
+    height: 50px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
     font-size: 14px;
-    margin-left: -25px;
+    margin-left: -10px;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+    margin-left: 0;
 }
 
 /* CSS for About page */
-.container .about-page {
-    width: 800px;
-    margin: 0 auto;
-}
 
+/* Header */
 .downtown {
+    width: 100%;
     margin: 30px 0 20px;
 }
 
@@ -224,13 +237,14 @@ footer nav a {
 .top-about .about {
     padding: 0 30px 20px;
 }
- .middle-about {
-     display: flex;
-     flex-wrap: wrap;
+/* Middle Section */
+.middle-about {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: -30px;
+    margin-top: -40px;
     padding: 0 20px;
- }
+}
 
  .middle-about .learn-more {
      width: 48%;
@@ -254,10 +268,77 @@ footer nav a {
      text-decoration: none;
      color: black;
      border: 1.5px solid black;
-     border-radius: 4px;
-     padding: 5px 20px;
+     border-radius: 10px;
+     padding: 8px 20px;
  }
 
- .bottom-about {
-     margin-top: 30px;
+ .button:hover {
+     background-color: firebrick;
+     color: white;
  }
+
+/* Bottom Section */
+ .bottom-about {
+     margin-top: 5%;
+     padding: 0 3%;
+ }
+
+/* Products page */
+.solar-img {
+    width: 100%;
+    margin: 30px 0 20px;
+}
+
+.header-products {
+    padding-bottom: 3%;
+    border-bottom: 1px dashed black;
+}
+
+.products-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1% 2.5%;
+}
+
+.products-section .product {
+    width: 48%;
+    border-bottom: 1px dashed black;
+    padding: 30px 0 30px;
+}
+
+.products-section .product img {
+    width: 95%;
+}
+
+.products-section .product h2 {
+    margin-top: 20px;
+}
+/* Image styles */
+.circuit-img {
+    background-image: url('/img/circuit-board.jpg');
+    width: 350px;
+    height: 235px;
+    background-size: cover;
+}
+
+.monitor-img {
+    background-image: url(/img/monitors.jpg);
+    width: 350px;
+    height: 235px;
+    background-size: cover;
+}
+
+.online-img {
+    background-image: url('/img/online-mkt.jpg');
+    width: 350px;
+    height: 235px;
+    background-size: cover;
+}
+
+.graph-img {
+    background-image: url('/img/graph.jpg');
+    width: 350px;
+    height: 235px;
+    background-size: cover;
+}
