@@ -195,25 +195,22 @@ footer nav {
     width: 60%;
     height: 50px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    /* padding: 20px 2%; */
     font-size: 14px;
-    /* margin-left: -25px; */
+    margin-left: -10px;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+    margin-left: 0;
 }
 
 /* CSS for About page */
-.container .about-page {
-    width: 800px;
-    margin: 0 auto;
-}
+
 /* Header */
 .downtown {
+    width: 100%;
     margin: 30px 0 20px;
 }
 
@@ -227,10 +224,10 @@ footer nav a {
 }
 /* Middle Section */
 .middle-about {
-     display: flex;
-     flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: -30px;
+    margin-top: -40px;
     padding: 0 20px;
 }
 
